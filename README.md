@@ -3,5 +3,5 @@
  
 ## About our project
 
-## Some rexources
-[HTML & CSS]: https://hackmd.io/@x10/HJl1rdgMo (之前寫的講義，可以參考)
+## Some resources
+<a href="https://hackmd.io/@x10/HJl1rdgMo" targen="_blank">HTML & CSS</a> (之前寫的講義，可以參考)
