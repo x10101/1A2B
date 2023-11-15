@@ -1,3 +1,42 @@
-.top{
-    height: 30px;
+body {
+    position: relative;
+}
+
+.game {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    height: 50px;
+    background-color: antiquewhite;
+    width: 100%;
+    margin: 0;
+}
+
+.title h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.mid {
+    width: 100%;
+    height: 400px;
+    background-color:cadetblue;
+}
+
+.player {
+    height: 25px;
+}
+
+.bot {
+ height: 25px;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    text-align: center;
 }
