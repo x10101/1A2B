@@ -6,6 +6,7 @@
 
 ## Some resources
 <a href="https://hackmd.io/@x10/HJl1rdgMo" targen="_blank">HTML & CSS</a> (之前寫的講義，可以參考)
+<br>
 <a href="https://replit.com/@ElaineChen1/2A2B?v=1" target="_blank">1A2B python 遊戲介面</a>
 
 ## 配色參考
