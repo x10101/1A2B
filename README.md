@@ -21,3 +21,10 @@
     <li style="color:rgb(177,207,223);">color5 rgb(177,207,223)</li>
     <li style="color:rgb(229,229,240);">color6 rgb(229,229,240)</li>
 </ul>
+
+## 工作分配
+<ul>
+    <li>動態效果：陳怡伶、李冠霓</li>
+    <li>遊戲對話部分：郭彥瑢</li>
+    <li>遊戲操作區域：吳映萱</li>
+</ul>
