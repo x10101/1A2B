@@ -1,7 +1,10 @@
 body {
     position: relative;
 }
+/*規則*/
 
+/*遊戲*/
+/*標題*/
 .game {
     width: 100%;
     height: 100%;
@@ -9,7 +12,7 @@ body {
 
 .title {
     height: 50px;
-    background-color: antiquewhite;
+    background-color: rgb(177,207,223);
     width: 100%;
     margin: 0;
 }
@@ -19,16 +22,43 @@ body {
     text-align: center;
 }
 
-.mid {
+/*對話框*/
+.dialogue {
     width: 100%;
     height: 400px;
-    background-color:cadetblue;
+    background-color:rgb(115,166,196);
+}
+
+.auto{
+    margin:30px; 
+}
+
+.auto span{
+    display:inline-block;
+    background:rgb(59,83,103);
+    border-radius:10px;
+    color:rgb(250,245,232);
+    padding:5px 10px;
+}
+
+.player{
+    margin:10px;
+    text-align:right;
+}
+
+.player span{
+    display:inline-block;
+    background:rgb(59,83,103);
+    border-radius:10px;
+    color:rgb(250,245,232);
+    padding:5px 10px;
 }
 
 .player {
     height: 25px;
 }
 
+/*操作區*/
 .bot {
  height: 25px;
 }
