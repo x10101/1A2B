@@ -58,15 +58,16 @@ body {
     height: 25px;
 }
 
-/*操作區*/
 .bot {
- height: 25px;
+    height: 25px;
 }
 
-.button {
+/*操作區*/
+.button1 {
     width: 50px;
     height: 50px;
     border-radius: 10px;
     background-color: aquamarine;
     text-align: center;
 }
+
