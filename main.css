@@ -63,27 +63,55 @@ body {
 }
 
 /*操作區*/
+/* 輸入欄 */
 .input {
+    display: flex;
+    justify-content: space-between; /* 將內容間距分配在左右 */
+    align-items: center;
+    width: 100%; /* 寬度充滿父元素 */
+}
+
+.custom-input {
+    flex: 0 0 calc(80% - 10px); /* 80% 寬度，減去間距 */
+}
+
+.delete,
+.enter {
+    flex: 0 0 calc(10% - 10px); /* 10% 寬度，減去間距 */
+}
+
+.delete {
+    background-color: rgb(250, 245, 232);
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.delete {
-    width: 80px;
+.custom-input input {
+    width: calc(100% - 16px); /* 100% 寬度，減去間距 */
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid rgb(250,245,232);
+    border-radius: 8px; 
+}
+
+.enter {
+    background-color: rgb(237,208,211);
     height: 50px;
     border-radius: 10px;
-    background-color: #e74c3c;
-    color: #fff;
     text-align: center;
     cursor: pointer;
-    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.custom-input {
-    width: 120px;
-}
-
+/*數字鈕*/
 .button {
     display: flex;
     justify-content: space-around;
@@ -92,11 +120,16 @@ body {
 }
 
 .button div {
+    background-color: rgb(59, 83, 103);
+    color: #fff;
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    background-color: aquamarine;
     text-align: center;
     margin: 5px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
 }
