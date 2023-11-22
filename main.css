@@ -15,6 +15,11 @@ body {
     background-color: rgb(177,207,223);
     width: 100%;
     margin: 0;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title h1 {
