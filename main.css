@@ -70,6 +70,7 @@ body {
 /*操作區*/
 /* 輸入欄 */
 .input {
+    margin-top:20px;
     display: flex;
     justify-content: space-between; /* 將內容間距分配在左右 */
     align-items: center;
