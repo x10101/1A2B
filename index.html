@@ -29,7 +29,16 @@
 
             <!--對話框-->
             <div id="chatBox">
-                <div class="bot"><span>1A2B遊戲開始! 請輸入數字!</span></div>
+                <div id="startGame">
+                    <div class="bot"><span>1A2B遊戲開始! 請輸入數字!</span></div>
+                </div>
+                <div id="endGame">
+                    <div class="bot"><span>是否結束遊戲？</span></div>
+                    <div class="endButton">
+                        <span onclick="play()">再來一局！</span>
+                        <span onclick="end()">結束遊戲</span>
+                    </div>
+                </div>
             </div>
 
             <!--操作區-->

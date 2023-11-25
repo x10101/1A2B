@@ -35,12 +35,12 @@ body {
     overflow: auto;
 }
 
-.bot, .player{
+.bot, .player, .endButton{
     margin:20px 15px;
     height: 25px;
 }
 
-.bot span{
+.bot span, .endButton span{
     display:inline-block;
     background:rgb(59,83,103);
     border-radius:10px;
@@ -59,6 +59,18 @@ body {
     color:rgb(250,245,232);
     padding:5px 10px;
 }
+
+#endGame{
+    visibility: hidden;
+}
+
+.endButton{
+    cursor: pointer;
+}
+
+.endButton span:hover {
+    transform: scale(1.1);
+  }
 
 /*操作區*/
 /* 輸入欄 */
@@ -117,67 +129,26 @@ body {
     margin-top: 10px;
 }
 
-#button1 {
-    background-image: url('images/1.png'); /* 替換為按鈕1的圖片路徑 */
-}
-
-#button2 {
-    background-image: url('images/2.png'); /* 替換為按鈕2的圖片路徑 */
-}
-
-#button3 {
-    background-image: url('images/3.png'); /* 替換為按鈕3的圖片路徑 */
-}
-
-#button4 {
-    background-image: url('images/4.png'); /* 替換為按鈕4的圖片路徑 */
-}
-
-#button5 {
-    background-image: url('images/5.png'); /* 替換為按鈕5的圖片路徑 */
-}
-
-#button6 {
-    background-image: url('images/6.png'); /* 替換為按鈕6的圖片路徑 */
-}
-
-#button7 {
-    background-image: url('images/7.png'); /* 替換為按鈕7的圖片路徑 */
-}
-
-#button8 {
-    background-image: url('images/8.png'); /* 替換為按鈕8的圖片路徑 */
-}
-
-#button9 {
-    background-image: url('images/9.png'); /* 替換為按鈕9的圖片路徑 */
-}
-
-#button10 {
-    background-image: url('images/10.png'); /* 替換為按鈕10的圖片路徑 */
-}
-
-/* 按鈕的樣式 */
 #button div {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 10vw; /* 使用 vw (viewport width) 作為寬度的單位 */
-    height: 10vw; /* 使高度等於寬度，以保持正方形 */
+    background-color: rgb(59, 83, 103);
+    color: #fff;
+    width: 50px;
+    height: 50px;
     border-radius: 10px;
     text-align: center;
+    margin: 5px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2vw; /* 使用 vw (viewport width) 作為字體大小的單位 */
+    font-size: 18px;
+    visibility: visible;
 }
 
-/* 可以使用媒體查詢來在不同的螢幕寬度應用不同的樣式 */
-@media (max-width: 600px) {
-    #button div {
-        width: 20vw; /* 在小於 600px 的螢幕上增加按鈕大小 */
-        height: 20vw; /* 使高度等於寬度，以保持正方形 */
-        font-size: 3vw;
-    }
+.enter:hover, .delete:hover{
+    transform: scale(1.05);
+}
+
+#button div:hover{
+    transform: scale(1.1);
 }
