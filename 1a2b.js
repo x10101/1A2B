@@ -27,6 +27,22 @@ const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
     }
 
     function submitValue() {
-        
+        for (i = 0; i < 4; i++) {
+            for (j = 0; j < 4; j++) {
+                if (ans[i] == guess[j]) {
+                    if (i == j) A++;
+                    else B++;
+                }
+            }
+        }
+
+        if (A != 4) {
+            A = 0;
+            B = 0;
+            deleteValue();
+        }
+        else {
+            
+        }
     }
 //}
