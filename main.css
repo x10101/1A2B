@@ -89,7 +89,7 @@ body {
     flex: 0 0 calc(10% - 10px); /* 10% 寬度，減去間距 */
 }
 
-.delete {
+#delete {
     background-color: rgb(250, 245, 232);
     height: 50px;
     border-radius: 10px;
