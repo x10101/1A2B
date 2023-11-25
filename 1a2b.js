@@ -37,6 +37,8 @@ const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
         }
 
         if (A != 4) {
+            var newMessage = document.createElement("p");
+            newMessage.textContent = [A,"A",B,"B"].join("");
             A = 0;
             B = 0;
             deleteValue();
