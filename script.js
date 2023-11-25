@@ -4,11 +4,4 @@ function button_hide(){
     Button.style.visibility = "hidden";
 }
 
-/*window.onload = function button_hide2(){
-    var Button = document.getElementById("button");
-    if(Button){
-        Button.style.visibility = "hidden";
-    }
-}*/
-
 /*恢復按鈕*/
