@@ -35,12 +35,12 @@ body {
     overflow: auto;
 }
 
-.bot, .player{
+.bot, .player, .endButton{
     margin:20px 15px;
     height: 25px;
 }
 
-.bot span{
+.bot span, .endButton span{
     display:inline-block;
     background:rgb(59,83,103);
     border-radius:10px;
@@ -59,6 +59,18 @@ body {
     color:rgb(250,245,232);
     padding:5px 10px;
 }
+
+#endGame{
+    visibility: hidden;
+}
+
+.endButton{
+    cursor: pointer;
+}
+
+.endButton span:hover {
+    transform: scale(1.1);
+  }
 
 /*操作區*/
 /* 輸入欄 */
@@ -131,4 +143,12 @@ body {
     align-items: center;
     font-size: 18px;
     visibility: visible;
+}
+
+.enter:hover, .delete:hover{
+    transform: scale(1.05);
+}
+
+#button div:hover{
+    transform: scale(1.1);
 }
