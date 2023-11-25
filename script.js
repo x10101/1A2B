@@ -9,6 +9,8 @@ function button_hide(num){
 }
 /*恢復按鈕*/
 function button_recover(){
+    n = 0;
+    
     for(var i = 1; i < 10; i++){
         var button_visible = document.getElementById("button" + i);
         if(button_visible.style.visibility === "hidden"){
