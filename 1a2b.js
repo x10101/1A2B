@@ -7,9 +7,12 @@ while (play) {
     var A = 0;
     var B = 0;
     var gussTime = 0; // 猜的次數
+    var guss = "";
 
-    function setValue(){
-        var guss = document.getElementById("customInput");
-        alert(guss.value);
-    }
+    
+}
+
+function setValue() {
+    var input = document.getElementById("customInput");
+    guss = input.setValue;
 }
