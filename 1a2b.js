@@ -1,6 +1,6 @@
 const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-function play() {
+//function play() {
     var [a, b, c, d] = numbers.sort(() => Math.random() - 0.5);
     var ans = [a, b, c, d];
     var A = 0;
@@ -11,7 +11,6 @@ function play() {
     // 將使用者按的數字按鈕加入變數
     function inputNumber(num) {
         guess.push(num);
-        alert(guess);
         showNumber();
     }
 
@@ -30,4 +29,4 @@ function play() {
     function submitValue() {
         
     }
-}
+//}
