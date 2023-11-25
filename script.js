@@ -1,5 +1,12 @@
-/*按鈕隱藏*/
+/*按鈕隱藏 （改成陣列）*/
 n = 0;
+function button_hide(){
+    if (n < 4) {
+        var Button = document.getElementById("button");
+        Button.style.visibility = "hidden";
+        n++;
+    }
+}
 function button_hide1(){
     if (n < 4) {
         var Button1 = document.getElementById("button1");
@@ -41,8 +48,8 @@ function button_hide9(){
 }
 /*恢復按鈕*/
 function button_recover(){
-    var Delete = document.getElementById("delete");
-    if(Button_recover.style.visibility == "hidden"){
-        Button_recover.style.visibility = "visible";
+    var button_visible = document.getElementById("button1");
+    if(button_visible.style.visibility === "hidden"){
+        button_visible.style.visibility = "visible";
     }
 }
