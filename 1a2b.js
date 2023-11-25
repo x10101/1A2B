@@ -31,13 +31,18 @@ const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
         showNumber();
     }
 
+    // 送出數值，判斷與顯示結果
     function submitValue() {
         if (guess < 4) alert("要輸入四個數字");
         else {
-            var userMessage = document.createElement("div");
-            userMessage.textContent = guess.join("");
+            gussTime++;
+            
+            let userMessage = document.createElement("div");
+            let text = document.createElement("span");
+            text.textContent = guess.join("");
+            userMessage.appendChild(text);
             userMessage.classList.add("player");
-            document.getElementById("dialogue").appendChild(userMessage);
+            document.getElementById("chatBox").appendChild(userMessage);
             for (i = 0; i < 4; i++) {
                 for (j = 0; j < 4; j++) {
                     if (ans[i] == guess[j]) {
@@ -48,17 +53,25 @@ const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
             }
 
             if (A != 4) {
-                var botMessage = document.createElement("div");
-                botMessage.textContent = [A,"A",B,"B"].join("");
+                let botMessage = document.createElement("div");
+                let text = document.createElement("span");
+                text.textContent = [A,"A",B,"B"].join("");
+                botMessage.appendChild(text);
                 botMessage.classList.add("bot");
-                document.getElementById("dialogue").appendChild(botMessage);
+                document.getElementById("chatBox").appendChild(botMessage);
                 A = 0;
                 B = 0;
                 deleteValue();
             }
             else {
-                
+                let botMessage = document.createElement("div");
+                let text = document.createElement("span");
+                text.textContent = "恭喜答對！共猜了" + gussTime + "次";
+                botMessage.appendChild(text);
+                botMessage.classList.add("bot");
+                document.getElementById("chatBox").appendChild(botMessage);
             }
+            chatBox.scrollTop = chatBox.scrollHeight;
         }
     }
 //}
