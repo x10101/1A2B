@@ -36,13 +36,11 @@
             <!--操作區-->
             <div class="input">
                 <div class="delete">delete</div>
-                <div class="custom-input">
-                    <input type="text" id="customInput" pattern="\d{4}" title="請輸入剛好四個數字">
-                </div>
+                <div class="custom-input"><span id = "customInput"></span></div>
                 <div class="enter" onclick="setValue()">enter</div>
             </div>
             <div class="button">
-                <div class="button1" onclick="button_hide()">1</div>
+                <div class="button1" onclick="button_hide(); inputNumber(1);">1</div>
                 <div class="button2">2</div>
                 <div class="button3">3</div>
                 <div class="button4">4</div>

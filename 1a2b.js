@@ -11,12 +11,14 @@ function play() {
     // 將使用者按的數字按鈕加入變數
     function inputNumber(num) {
         guess.push(num);
+        alert(guess);
         showNumber();
     }
 
     // 更新輸入框中的數值
     function showNumber() {
-        document.getElementById("customInput").value = guess.join("");
+        let n = guess.join("");
+        document.getElementById("customInput").textContent = n;
     }
 
     // 刪除輸入的數值
