@@ -35,20 +35,20 @@
 
             <!--操作區-->
             <div class="input">
-                <div id="delete" onclick="deleteValue(); button_recover()">delete</div>
+                <div class="delete" onclick="deleteValue(); button_recover()">delete</div>
                 <div class="custom-input"><span id = "customInput"></span></div>
-                <div class="enter" onclick="submitValue()">enter</div>
+                <div class="enter" onclick="submitValue(); button_recover()">enter</div>
             </div>
-            <div class="button">
-                <div id="button1" onclick="button_hide1(); inputNumber(1)">1</div>
-                <div id="button2" onclick="button_hide2(); inputNumber(2)">2</div>
-                <div id="button3" onclick="button_hide3(); inputNumber(3)">3</div>
-                <div id="button4" onclick="button_hide4(); inputNumber(4)">4</div>
-                <div id="button5" onclick="button_hide5(); inputNumber(5)">5</div>
-                <div id="button6" onclick="button_hide6(); inputNumber(6)">6</div>
-                <div id="button7" onclick="button_hide7(); inputNumber(7)">7</div>
-                <div id="button8" onclick="button_hide8(); inputNumber(8)">8</div>
-                <div id="button9" onclick="button_hide9(); inputNumber(9)">9</div>
+            <div id="button">
+                <div id="button1" onclick="button_hide(1); inputNumber(1)">1</div>
+                <div id="button2" onclick="button_hide(2); inputNumber(2)">2</div>
+                <div id="button3" onclick="button_hide(3); inputNumber(3)">3</div>
+                <div id="button4" onclick="button_hide(4); inputNumber(4)">4</div>
+                <div id="button5" onclick="button_hide(5); inputNumber(5)">5</div>
+                <div id="button6" onclick="button_hide(6); inputNumber(6)">6</div>
+                <div id="button7" onclick="button_hide(7); inputNumber(7)">7</div>
+                <div id="button8" onclick="button_hide(8); inputNumber(8)">8</div>
+                <div id="button9" onclick="button_hide(9); inputNumber(9)">9</div>
             </div>
         </div>
     </div>
