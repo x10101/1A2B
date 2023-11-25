@@ -36,7 +36,7 @@ const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
         if (guess < 4) alert("要輸入四個數字");
         else {
             gussTime++;
-            
+
             let userMessage = document.createElement("div");
             let text = document.createElement("span");
             text.textContent = guess.join("");
@@ -61,7 +61,6 @@ const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
                 document.getElementById("chatBox").appendChild(botMessage);
                 A = 0;
                 B = 0;
-                deleteValue();
             }
             else {
                 let botMessage = document.createElement("div");
@@ -71,6 +70,7 @@ const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
                 botMessage.classList.add("bot");
                 document.getElementById("chatBox").appendChild(botMessage);
             }
+            deleteValue();
             chatBox.scrollTop = chatBox.scrollHeight;
         }
     }
