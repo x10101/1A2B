@@ -14,14 +14,19 @@
     <!--主要內容區塊-->
     <div class="main">
 
-        <!--規則介面-->
-        <div id="rule">
+        <!--開始介面-->
+        <div id="startPage">
+            <!--規則-->
+            <div>
 
+            </div>
+            <!--開始按鈕-->
+            <div class="startButton" onclick="start(); play();">START!</div>
         </div>
 
         <!--遊戲介面-->
         <div id="game">
-            
+
             <!--標題-->
             <div class="title">
                 <h1>1A2B</h1>
@@ -29,14 +34,15 @@
 
             <!--對話框-->
             <div id="chatBox">
-                <div id="startGame">
-                    <div class="bot"><span>1A2B遊戲開始! 請輸入數字!</span></div>
+                <!--遊戲中的訊息-->
+                <div id="gameMes">
                 </div>
-                <div id="endGame">
+                <!--結束遊戲的訊息-->
+                <div id="endMes">
                     <div class="bot"><span>是否結束遊戲？</span></div>
                     <div class="endButton">
-                        <span onclick="play()">再來一局！</span>
-                        <span onclick="end()">結束遊戲</span>
+                        <span onclick="clearMes(); play();">再來一局！</span>
+                        <span onclick="clearMes(); end();">結束遊戲</span>
                     </div>
                 </div>
             </div>
@@ -48,7 +54,7 @@
                 <div class="enter" onclick="button_recover(); submitValue();">enter</div>
             </div>
             <div id="button">
-                <div id="button1" onclick="button_hide(1); inputNumber(1)"><img src="1.png"></div>
+                <div id="button1" onclick="button_hide(1); inputNumber(1)">1</div>
                 <div id="button2" onclick="button_hide(2); inputNumber(2)">2</div>
                 <div id="button3" onclick="button_hide(3); inputNumber(3)">3</div>
                 <div id="button4" onclick="button_hide(4); inputNumber(4)">4</div>
@@ -60,6 +66,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>

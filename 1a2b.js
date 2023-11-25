@@ -1,13 +1,20 @@
 const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+var [a, b, c, d] = numbers.sort(() => Math.random() - 0.5);
+var ans;
+var A;
+var B;
+var gussTime; // 猜的次數
+var guess;
 
 // 開始遊戲，重設變數
 function play() {
-    var [a, b, c, d] = numbers.sort(() => Math.random() - 0.5);
-    var ans = [a, b, c, d];
-    var A = 0;
-    var B = 0;
-    var gussTime = 0; // 猜的次數
-    var guess = [];
+    [a, b, c, d] = numbers.sort(() => Math.random() - 0.5);
+    ans = [a, b, c, d];
+    A = 0;
+    B = 0;
+    gussTime = 0; // 猜的次數
+    guess = [];
+    sendMessage("bot", "1A2B遊戲開始! 請輸入數字!");
 }
 
 // 將使用者按的數字按鈕加入變數
@@ -55,8 +62,8 @@ function submitValue() {
         }
         else {
             sendMessage("bot", "恭喜答對！共猜了" + gussTime + "次");
-            
-            document.getElementById("endGame").style.visibility = "visible";
+            document.getElementById("endMes").style.display = "block";
+            chatBox.scrollTop = chatBox.scrollHeight;
         }
     }
 }
@@ -68,12 +75,14 @@ function sendMessage(type, mes) {
     text.textContent = mes;
     Message.appendChild(text);
     Message.classList.add(type);
-    document.getElementById("chatBox").appendChild(Message);
+    document.getElementById("gameMes").appendChild(Message);
     chatBox.scrollTop = chatBox.scrollHeight;
 
     deleteValue();
 }
 
-function end() {
-
+// 清空歷史訊息
+function clearMes() {
+    document.getElementById("gameMes").innerHTML = "";
+    document.getElementById("endMes").style.display = "none";
 }

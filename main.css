@@ -1,13 +1,21 @@
 body {
     position: relative;
 }
-/*規則*/
+/*開始*/
+#startPage{
+    display: block;
+}
+
+.startButton{
+    cursor: pointer;
+}
 
 /*遊戲*/
 /*標題*/
-.game {
+#game {
     width: 100%;
     height: 100%;
+    display: none;
 }
 
 .title {
@@ -60,8 +68,8 @@ body {
     padding:5px 10px;
 }
 
-#endGame{
-    visibility: hidden;
+#endMes{
+    display: none;
 }
 
 .endButton{
@@ -142,7 +150,6 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    visibility: visible;
 }
 
 .enter:hover, .delete:hover{
