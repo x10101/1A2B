@@ -79,9 +79,11 @@ body {
     width: calc(100% - 16px); /* 100% 寬度，減去間距 */
     height: 40px;
     padding: 8px;
-    font-size: 16px;
+    font-size: 25px;
     border: 2px solid rgb(250,245,232);
     border-radius: 8px;
+    display: flex;
+    align-items: center;
 }
 
 #delete, .enter {
