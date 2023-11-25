@@ -84,8 +84,7 @@ body {
     border-radius: 8px;
 }
 
-.delete,
-.enter {
+#delete, .enter {
     flex: 0 0 calc(10% - 10px); /* 10% 寬度，減去間距 */
 }
 
