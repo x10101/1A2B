@@ -10,8 +10,13 @@ const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
     // 將使用者按的數字按鈕加入變數
     function inputNumber(num) {
-        guess.push(num);
-        showNumber();
+        if (guess.length >= 4) {
+            alert("一次只能輸入四個數字！");
+        }
+        else {
+            guess.push(num);
+            showNumber();
+        }
     }
 
     // 更新輸入框中的數值
