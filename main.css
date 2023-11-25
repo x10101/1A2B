@@ -35,7 +35,7 @@ body {
     overflow: auto;
 }
 
-.bot{
+.auto span{
     display:inline-block;
     background:rgb(59,83,103);
     border-radius:10px;
@@ -114,14 +114,14 @@ body {
 }
 
 /*數字鈕*/
-#button {
+.button {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 10px;
 }
 
-#button div {
+.button div {
     background-color: rgb(59, 83, 103);
     color: #fff;
     width: 50px;
