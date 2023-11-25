@@ -1,7 +1,11 @@
 /*按鈕隱藏*/
+n = 0;
 function button_hide1(){
-    var Button1 = document.getElementById("button1");
-    Button1.style.visibility = "hidden";
+    if (n < 4) {
+        var Button1 = document.getElementById("button1");
+        Button1.style.visibility = "hidden";
+        n++;
+    }
 }
 function button_hide2(){
     var Button2 = document.getElementById("button2");
