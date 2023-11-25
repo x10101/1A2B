@@ -32,24 +32,33 @@ const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
     }
 
     function submitValue() {
-        for (i = 0; i < 4; i++) {
-            for (j = 0; j < 4; j++) {
-                if (ans[i] == guess[j]) {
-                    if (i == j) A++;
-                    else B++;
+        if (guess < 4) alert("要輸入四個數字");
+        else {
+            var userMessage = document.createElement("div");
+            userMessage.textContent = guess.join("");
+            userMessage.classList.add("player");
+            document.getElementById("dialogue").appendChild(userMessage);
+            for (i = 0; i < 4; i++) {
+                for (j = 0; j < 4; j++) {
+                    if (ans[i] == guess[j]) {
+                        if (i == j) A++;
+                        else B++;
+                    }
                 }
             }
-        }
 
-        if (A != 4) {
-            var newMessage = document.createElement("p");
-            newMessage.textContent = [A,"A",B,"B"].join("");
-            A = 0;
-            B = 0;
-            deleteValue();
-        }
-        else {
-            
+            if (A != 4) {
+                var botMessage = document.createElement("div");
+                botMessage.textContent = [A,"A",B,"B"].join("");
+                botMessage.classList.add("bot");
+                document.getElementById("dialogue").appendChild(botMessage);
+                A = 0;
+                B = 0;
+                deleteValue();
+            }
+            else {
+                
+            }
         }
     }
 //}
