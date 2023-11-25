@@ -5,7 +5,7 @@ let A = 0;
 let B = 0;
 let gussTime = 0; // 猜的次數
 
-function run(){
-    var guss = document.getElementById("coustomInput");
-    alert(guss);
+function getValue(){
+    var guss = document.getElementById("customInput");
+    alert(guss.value);
 }
