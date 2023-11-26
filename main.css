@@ -56,6 +56,10 @@ body {
     padding:5px 10px;
 }
 
+.endButton span{
+    margin:0px 20px 0px 0px;
+}
+
 .player{
     text-align:right;
 }

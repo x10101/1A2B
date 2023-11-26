@@ -42,7 +42,10 @@ function deleteValue() {
 
 // 送出數值，判斷與顯示結果
 function submitValue() {
-    if (guess < 4) alert("要輸入四個數字");
+    if (guess.length < 4) {
+        alert("要輸入四個數字");
+        deleteValue();
+    }
     else {
         gussTime++;
         for (i = 0; i < 4; i++) {
@@ -54,9 +57,9 @@ function submitValue() {
             }
         }
         sendMessage("player", guess.join(""));
+        sendMessage("bot", [A,"A",B,"B"].join(""));
 
         if (A != 4) {
-            sendMessage("bot", [A,"A",B,"B"].join(""));
             A = 0;
             B = 0;
         }
