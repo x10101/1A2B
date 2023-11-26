@@ -1,5 +1,5 @@
 # WebProject
-[遊戲連結](https://x10101.github.io/WebProject/)
+[遊戲連結](https://x10101.github.io/1A2B/)
  
 ## About our project
 1A2B 的網頁小遊戲
