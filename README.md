@@ -1,14 +1,14 @@
 # WebProject
-專題！！！大家加油！！！
+[遊戲連結](https://x10101.github.io/WebProject/)
  
 ## About our project
 1A2B 的網頁小遊戲
 
 ## Some resources
-- <a href="https://hackmd.io/@x10/HJl1rdgMo" target="_blank">HTML & CSS</a> (之前寫的講義，可以參考)
-- <a href="https://keen-leopard-b6c.notion.site/20231113-Web-c8c2d7f4e0724d168cd31d778b4ac477?pvs=4" target="_blank">JS</a>
-- <a href="https://replit.com/@ElaineChen1/2A2B?v=1" target="_blank">1A2B python 遊戲介面</a>
-- <a href="https://codepen.io/abbyzhou6/pen/ReVJeG" target="_blank">聊天框</a>
+- [HTML & CSS](https://hackmd.io/@x10/HJl1rdgMo)
+- [JS](https://keen-leopard-b6c.notion.site/20231113-Web-c8c2d7f4e0724d168cd31d778b4ac477?pvs=4)
+- [1A2B python 遊戲介面](https://replit.com/@ElaineChen1/2A2B?v=1)
+- [聊天框參考](https://codepen.io/abbyzhou6/pen/ReVJeG)
 
 ## 配色參考
 ![Alt text](images/color4.png)
