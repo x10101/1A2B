@@ -3,11 +3,53 @@ body {
 }
 /*開始*/
 #startPage{
+    background-color: rgb(177,207,223);
+    color:rgb(59,83,103);
     display: block;
 }
 
-.startButton{
+.titleS{
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    opacity: 0;
+    transition: top 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+#Title1{
+    animation-delay: 0s
+}
+
+#Title2{
+    animation-delay: 3s;
+}
+
+.button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
+    background-color: rgb(177,207,223);
+    color: rgb(59,83,103);
+    border: none;
+    border-radius: 5px;
+}
+
+#ruleButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#startButton{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 /*遊戲*/
