@@ -9,7 +9,7 @@ body {
 }
 
 .titleS{
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
     position: relative;
     top: 0;
@@ -26,20 +26,21 @@ body {
 }
 
 .button {
-    margin: 0 10px;
+    margin: 0 30px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 30px;
     cursor: pointer;
     background-color: rgb(177,207,223);
     color: rgb(59,83,103);
     border: none;
     border-radius: 5px;
+    margin-right: 10px;
 }
 
 #ruleButton{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    /*margin-top: 100px;*/
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -47,7 +48,7 @@ body {
     cursor: pointer;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -63,6 +64,7 @@ body {
 .title {
     height: 50px;
     background-color: rgb(177,207,223);
+    color:rgb(59,83,103);
     width: 100%;
     margin: 0;
     margin: 5px;
