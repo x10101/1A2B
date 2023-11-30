@@ -1,5 +1,7 @@
 body {
     position: relative;
+    background-color: rgb(177, 207, 223);
+    color: rgb(59, 83, 103);
 }
 /*開始*/
 #startPage{
@@ -63,10 +65,11 @@ body {
 
 .title {
     height: 50px;
-    background-color: rgb(177,207,223);
-    color:rgb(59,83,103);
+    background-color: rgb(177, 207, 223);
+    color: rgb(59, 83, 103);
+    border: 2px solid #fff; /* 添加白色边框 */
+    border-radius: 10px; /* 圆角大小，可以根据需要进行调整 */
     width: 100%;
-    margin: 0;
     margin-bottom: 10px;
     cursor: pointer;
     display: flex;
@@ -94,7 +97,7 @@ body {
 
 .bot span, .endButton span{
     display:inline-block;
-    background:rgb(59,83,103);
+    background:rgb(59, 83, 103);
     border-radius:10px;
     color:rgb(250,245,232);
     padding:5px 10px;
@@ -110,9 +113,9 @@ body {
 
 .player span{
     display:inline-block;
-    background:rgb(59,83,103);
+    background:rgb(237,208,211);
     border-radius:10px;
-    color:rgb(250,245,232);
+    /*color:rgb(250,245,232);*/
     padding:5px 10px;
 }
 
@@ -141,10 +144,12 @@ body {
 .custom-input {
     flex: 0 0 calc(80% - 10px); /* 80% 寬度，減去間距 */
     width: calc(100% - 16px); /* 100% 寬度，減去間距 */
-    height: 40px;
+    margin-top:3px;
+    height: 30px;
     padding: 8px;
     font-size: 25px;
-    border: 2px solid rgb(250,245,232);
+    border: 2px solid rgb(250, 245, 232);
+    color: rgb(59, 83, 103); /* color3 */
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -155,7 +160,8 @@ body {
 }
 
 .delete {
-    background-color: rgb(250, 245, 232);
+    background-color: rgb(250,245,232);
+    color: rgb(59, 83, 103);
     height: 50px;
     border-radius: 10px;
     text-align: center;
@@ -167,7 +173,8 @@ body {
 
 
 .enter {
-    background-color: rgb(237,208,211);
+    background-color: rgb(237, 208, 211);
+    /*color: #fff;*/
     height: 50px;
     border-radius: 10px;
     text-align: center;
@@ -206,6 +213,7 @@ body {
 
 #button div:hover{
     transform: scale(1.1);
+    background-color: rgb(59, 83, 103);
 }
 
 /* 一般樣式 */
@@ -259,6 +267,7 @@ body {
         flex: 0 0 calc(20% - 10px); /* 調整刪除和輸入按鈕的寬度 */
         width: calc(20% - 10px); /* 調整刪除和輸入按鈕的寬度 */
     }
+
 }
 
 /* 中型螢幕 */
