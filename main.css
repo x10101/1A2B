@@ -207,3 +207,50 @@ body {
 #button div:hover{
     transform: scale(1.1);
 }
+
+/* 一般樣式 */
+.button {
+    margin: 0 30px;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(177, 207, 223);
+    color: rgb(59, 83, 103);
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* 小型螢幕 */
+@media only screen and (max-width: 600px) {
+    .button {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+
+    /* 將按鈕以 3x3 的方式排列 */
+    #button {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px; /* 調整按鈕之間的間距 */
+    }
+}
+
+/* 中型螢幕 */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .button {
+        font-size: 25px;
+        padding: 10px 18px;
+    }
+}
+
+/* 大型螢幕 */
+@media only screen and (min-width: 1025px) {
+    /* 在這裡保持原始樣式，或進行其他調整 */
+    
+    #button div {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
