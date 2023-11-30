@@ -1,24 +1,18 @@
 //封面動畫
-setTimeout(startGame, 800);
+setTimeout(startGame, 50);
 function startGame() {
-    document.getElementById('Title1').style.top = '20px';
-    document.getElementById('Title1').style.opacity = '1';
     setTimeout(function () {
-        document.getElementById('Title1').style.opacity = '0';
+        document.getElementById('title').style.top = '20px';
+        document.getElementById('title').style.opacity = '1';
         setTimeout(function () {
-            document.getElementById('Title2').style.top = '20px';
-            document.getElementById('Title2').style.opacity = '1';
+            document.getElementById('title').style.opacity = '0';
             setTimeout(function () {
-                document.getElementById('Title2').style.opacity = '0';
-                setTimeout(function () {
-                    document.getElementById('Title1').style.opacity = '1';
-                    document.getElementById('Title2').style.opacity = '1';
-                    document.getElementById('ruleButton').style.opacity = '1';
-                    document.getElementById('startButton').style.opacity = '1';
-                }, 1000);
+                document.getElementById('title').style.opacity = '1';
+                document.getElementById('ruleButton').style.opacity = '1';
+                document.getElementById('startButton').style.opacity = '1';
             }, 1000);
         }, 1000);
-    }, 1000); 
+    }, 1000);
 }
 
 // 開始遊戲
