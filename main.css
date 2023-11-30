@@ -32,6 +32,15 @@ body {
     margin-right: 10px;
 }
 
+#rule{
+    text-align: center;
+    white-space: pre-line;
+    justify-content: center;
+    display: flex;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
 #ruleButton{
     display: flex;
     justify-content: center;

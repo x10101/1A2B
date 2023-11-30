@@ -9,6 +9,7 @@ function startGame() {
             setTimeout(function () {
                 document.getElementById('title').style.opacity = '1';
                 document.getElementById('ruleButton').style.opacity = '1';
+                document.getElementById('rule').style.opacity = '1';
                 document.getElementById('startButton').style.opacity = '1';
             }, 1000);
         }, 1000);
