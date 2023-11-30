@@ -27,6 +27,24 @@ function start() {
     document.getElementById("game").style.display = "block";
 }
 
+//根據瀏覽器窗口調整chatbox高度
+window.onload = function() {
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    var otherElementHeight;
+    if (viewportWidth < 660) {
+        // 在小屏幕上的计算
+        otherElementHeight = 350;
+    } else if (viewportWidth >= 600 && viewportWidth < 1025) {
+        // 在中等屏幕上的计算
+        otherElementHeight = 220;
+    } else {
+        // 在大屏幕上的计算
+        otherElementHeight = 220;
+    }
+    var chatBox = document.getElementById('chatBox');
+    chatBox.style.height = 'calc(100vh - ' + otherElementHeight + 'px)';
+};
+
 // 結束遊戲
 function end() {
     document.getElementById("startPage").style.display = "block";
@@ -53,3 +71,4 @@ function button_recover(){
         }
     }
 }
+
