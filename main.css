@@ -20,39 +20,34 @@ body {
     transition: top 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-.button {
+.buttons {
     margin: 0 30px;
-    padding: 10px 20px;
-    font-size: 30px;
+    padding: 10px 10px;
+    font-size: 15px;
     cursor: pointer;
-    background-color: rgb(177,207,223);
+    justify-content: center;
+    display: flex;
+    background-color: rgb(250,245,232);
     color: rgb(59,83,103);
     border: none;
-    border-radius: 5px;
-    margin-right: 10px;
+    border-radius: 100px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#ruleButton{
+    margin-top: 100px;
+}
+
+#startButton{
+    margin-top: 20px;
 }
 
 #rule{
     text-align: center;
     white-space: pre-line;
     justify-content: center;
-    display: flex;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-#ruleButton{
-    display: flex;
-    justify-content: center;
-    /*margin-top: 100px;*/
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-#startButton{
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    /*margin-top: 20px;*/
+    display: none;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -69,7 +64,7 @@ body {
     height: 50px;
     background-color: rgb(177, 207, 223);
     color: rgb(59, 83, 103);
-    border: 2px solid #fff; /* 添加白色边框 */
+    border: 2px solid rgb(250,245,232); /* 添加白色边框 */
     border-radius: 10px; /* 圆角大小，可以根据需要进行调整 */
     width: 100%;
     margin-bottom: 10px;

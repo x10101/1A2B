@@ -1,6 +1,6 @@
 //封面動畫
-setTimeout(startGame, 50);
-function startGame() {
+setTimeout(startPage, 50);
+function startPage() {
     setTimeout(function () {
         document.getElementById('title').style.top = '20px';
         document.getElementById('title').style.opacity = '1';
@@ -14,6 +14,11 @@ function startGame() {
             }, 1000);
         }, 1000);
     }, 1000);
+}
+
+//出現規則
+function startRule() {
+    document.getElementById("rule").style.display = "block";
 }
 
 // 開始遊戲
