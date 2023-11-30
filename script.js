@@ -27,13 +27,10 @@ window.onload = function() {
     var otherElementHeight;
     if (viewportWidth < 660) {
         // 在小屏幕上的计算
-        otherElementHeight = 350;
-    } else if (viewportWidth >= 600 && viewportWidth < 1025) {
-        // 在中等屏幕上的计算
-        otherElementHeight = 220;
+        otherElementHeight = 360;
     } else {
-        // 在大屏幕上的计算
-        otherElementHeight = 220;
+        // 在中等屏幕、大屏幕上的计算
+        otherElementHeight = 230;
     }
     var chatBox = document.getElementById('chatBox');
     chatBox.style.height = 'calc(100vh - ' + otherElementHeight + 'px)';
