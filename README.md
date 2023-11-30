@@ -9,6 +9,7 @@
 - [JS](https://keen-leopard-b6c.notion.site/20231113-Web-c8c2d7f4e0724d168cd31d778b4ac477?pvs=4)
 - [1A2B python 遊戲介面](https://replit.com/@ElaineChen1/2A2B?v=1)
 - [聊天框參考](https://codepen.io/abbyzhou6/pen/ReVJeG)
+- [M PLUS Rounded 1c](https://fonts.google.com/specimen/M+PLUS+Rounded+1c)
 
 ## 配色參考
 ![Alt text](images/color4.png)
@@ -20,9 +21,6 @@
     <li style="color:rgb(177,207,223);">color5 rgb(177,207,223)</li>
     <li style="color:rgb(229,229,240);">color6 rgb(229,229,240)</li>
 </ul>
-
-## 字體網站
-- [M PLUS Rounded 1c](https://fonts.google.com/specimen/M+PLUS+Rounded+1c)
 
 ## 工作分配
 - 動態效果：陳怡伶、李冠霓
