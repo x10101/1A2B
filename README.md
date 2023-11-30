@@ -21,6 +21,9 @@
     <li style="color:rgb(229,229,240);">color6 rgb(229,229,240)</li>
 </ul>
 
+## 字體網站
+- [M PLUS Rounded 1c](https://fonts.google.com/specimen/M+PLUS+Rounded+1c)
+
 ## 工作分配
 - 動態效果：陳怡伶、李冠霓
 - 遊戲對話部分：郭彥瑢
