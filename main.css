@@ -11,21 +11,13 @@ body {
     display: block;
 }
 
-.titleS{
+.Title{
     font-size: 30px;
     text-align: center;
     position: relative;
     top: 0;
     opacity: 0;
     transition: top 1s ease-in-out, opacity 1s ease-in-out;
-}
-
-#Title1{
-    animation-delay: 0s
-}
-
-#Title2{
-    animation-delay: 3s;
 }
 
 .button {
