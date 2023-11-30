@@ -9,7 +9,7 @@
 - [JS](https://keen-leopard-b6c.notion.site/20231113-Web-c8c2d7f4e0724d168cd31d778b4ac477?pvs=4)
 - [1A2B python 遊戲介面](https://replit.com/@ElaineChen1/2A2B?v=1)
 - [聊天框參考](https://codepen.io/abbyzhou6/pen/ReVJeG)
-- [M PLUS Rounded 1c](https://fonts.google.com/specimen/M+PLUS+Rounded+1c)
+- [字體參考](https://fonts.google.com/specimen/M+PLUS+Rounded+1c)
 
 ## 配色參考
 ![Alt text](images/color4.png)
