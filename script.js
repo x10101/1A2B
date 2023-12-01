@@ -17,12 +17,8 @@ function startPage() {
 }
 
 //出現規則
-function showRule() {
-    document.getElementById("rule").style.display = "flex";
-}
-
-function closeRule() {
-    document.getElementById("rule").style.display = "none";
+function startRule() {
+    document.getElementById("rule").style.display = "block";
 }
 
 // 開始遊戲
