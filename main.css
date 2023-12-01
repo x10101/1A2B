@@ -83,11 +83,11 @@ body, html, .main, #rule{
 }
 
 /*遊戲*/
-/*標題*/
 #game {
-    width: 100%;
+    width: 95%;
     height: 100%;
     display: none;
+    margin: auto;
 }
 
 .title {
@@ -98,7 +98,7 @@ body, html, .main, #rule{
     border-radius: 10px; /* 圆角大小，可以根据需要进行调整 */
     width: 100%;
     margin-bottom: 10px;
-    cursor: pointer;
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,6 +183,7 @@ body, html, .main, #rule{
     border-radius: 8px;
     display: flex;
     align-items: center;
+    background-color: rgba(229,229,240,0.3);
 }
 
 .delete, .enter {
