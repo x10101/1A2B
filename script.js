@@ -18,7 +18,11 @@ function startPage() {
 
 //出現規則
 function startRule() {
-    document.getElementById("rule").style.display = "block";
+    if (rule.style.display == 'none') {
+        rule.style.display = 'block';
+    } else {
+        rule.style.display = 'none';
+    }
 }
 
 // 開始遊戲
