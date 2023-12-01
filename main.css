@@ -1,9 +1,11 @@
 body {
+    margin: 0;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     position: relative;
     background-color: rgb(177, 207, 223);
     color: rgb(59, 83, 103);
 }
+
 /*開始*/
 #startPage{
     background-color: rgb(177,207,223);
@@ -11,13 +13,17 @@ body {
     display: block;
 }
 
-.Title{
+#title{
     font-size: 30px;
     text-align: center;
     position: relative;
     top: 0;
     opacity: 0;
     transition: top 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+#title h1{
+    margin: 0;
 }
 
 .buttons {
@@ -44,12 +50,36 @@ body {
 }
 
 #rule{
+    height: 100%;
+    width: 100%;
     text-align: center;
     white-space: pre-line;
     justify-content: center;
     display: none;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    margin: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+}
+
+#rule div{
+    background-color: rgb(229,229,240);
+    height: 250px;
+    border-radius: 5%;
+}
+
+#rule div h3{
+    margin: auto 20px;
+}
+
+body, html, .main, #rule{
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 /*遊戲*/
