@@ -2,12 +2,12 @@
 setTimeout(startPage, 50);
 function startPage() {
     setTimeout(function () {
-        document.getElementById('title').style.top = '20px';
-        document.getElementById('title').style.opacity = '1';
+        document.getElementById('gameName').style.top = '20px';
+        document.getElementById('gameName').style.opacity = '1';
         setTimeout(function () {
-            document.getElementById('title').style.opacity = '0';
+            document.getElementById('gameName').style.opacity = '0';
             setTimeout(function () {
-                document.getElementById('title').style.opacity = '1';
+                document.getElementById('gameName').style.opacity = '1';
                 document.getElementById('ruleButton').style.opacity = '1';
                 document.getElementById('rule').style.opacity = '1';
                 document.getElementById('startButton').style.opacity = '1';
