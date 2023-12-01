@@ -13,7 +13,7 @@ body {
     display: block;
 }
 
-#title{
+#gameName{
     font-size: 30px;
     text-align: center;
     position: relative;
@@ -22,7 +22,7 @@ body {
     transition: top 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-#title h1{
+#gameName h1{
     margin: 0;
 }
 
