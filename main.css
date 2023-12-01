@@ -6,6 +6,10 @@ body {
     color: rgb(59, 83, 103);
 }
 
+.main{
+    position: relative;
+}
+
 /*開始*/
 #startPage{
     background-color: rgb(177,207,223);
@@ -80,7 +84,6 @@ body, html, .main, #rule{
     height: 100%;
     width: 100%;
     margin: 0;
-    position: relative;
 }
 
 /*遊戲*/
