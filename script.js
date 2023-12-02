@@ -41,10 +41,10 @@ window.onload = function() {
         // 在小屏幕上的計算
         otherElementHeight = 480;
     } else if (viewportWidth < 1400 && viewportHeight < 1900) {
-        // 在小屏幕上的計算
-        otherElementHeight = 330;
+        // 在中等屏幕上的計算
+        otherElementHeight = 300;
     } else {
-        // 在中等屏幕、大屏幕上的計算
+        // 在大屏幕上的計算
         otherElementHeight = 230;
     }
 
