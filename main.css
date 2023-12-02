@@ -18,7 +18,7 @@ body {
 }
 
 #gameName{
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     position: relative;
     top: 0;
@@ -27,7 +27,7 @@ body {
 }
 
 #gameName h1{
-    margin: 0;
+    margin: 50px;
 }
 
 .buttons {
