@@ -61,6 +61,7 @@ function button_hide(num){
         n++;
     }
 }
+
 /*恢復按鈕*/
 function button_recover(){
     n = 0;
