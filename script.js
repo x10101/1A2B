@@ -34,14 +34,20 @@ function start() {
 //根據瀏覽器窗口調整chatbox高度
 window.onload = function() {
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    var viewportHeight = window.innerHeight || document.documentElement.clientHeight; // 修正此行
     var otherElementHeight;
+
     if (viewportWidth < 660) {
-        // 在小屏幕上的计算
+        // 在小屏幕上的計算
         otherElementHeight = 480;
+    } else if (viewportWidth < 1400 && viewportHeight < 1900) {
+        // 在小屏幕上的計算
+        otherElementHeight = 330;
     } else {
-        // 在中等屏幕、大屏幕上的计算
+        // 在中等屏幕、大屏幕上的計算
         otherElementHeight = 230;
     }
+
     var chatBox = document.getElementById('chatBox');
     chatBox.style.height = 'calc(100vh - ' + otherElementHeight + 'px)';
 };
