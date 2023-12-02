@@ -27,7 +27,7 @@ window.onload = function() {
     var otherElementHeight;
     if (viewportWidth < 660) {
         // 在小屏幕上的计算
-        otherElementHeight = 360;
+        otherElementHeight = 430;
     } else {
         // 在中等屏幕、大屏幕上的计算
         otherElementHeight = 230;
