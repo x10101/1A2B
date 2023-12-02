@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1A2B</title>
+
     <!--網頁標籤圖案-->
     <link rel="icon" href="images/game-icon.png" type="image/x-icon">
+
     <link rel="stylesheet" href="main.css">
     <script src="script.js"></script>
     <script src="1a2b.js"></script>
+
     <!--字體-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,16 +24,26 @@
         <!--開始介面-->
         <div id="startPage">
             <!--標題-->
-            <div id="title" class="Title">
+            <div id="gameName">
                 <h1>1A2B</h1>
             </div>
             <!--規則按紐-->
-            <div id="ruleButton" class="buttons">
+            <div id="ruleButton" class="buttons" onclick="showRule();">
                 <h1>RULE</h1>
             </div>
             <!--開始按鈕-->
             <div id="startButton" class="buttons" onclick="start(); play();">
                 <h1>START</h1>
+            </div>
+        </div>
+
+        <!--規則-->
+        <div id="rule" onclick="closeRule()">
+            <div>
+                <h3>謎底為4個不重複且不為0數字
+                    <br>玩家猜的數字和位置正確得 1A<br>只有數字正確則得 1B
+                    <br>得到 4A 則遊戲結束!
+                </h3>
             </div>
         </div>
 

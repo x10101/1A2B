@@ -1,18 +1,28 @@
 //封面動畫
-setTimeout(startGame, 50);
-function startGame() {
+setTimeout(startPage, 50);
+function startPage() {
     setTimeout(function () {
-        document.getElementById('title').style.top = '20px';
-        document.getElementById('title').style.opacity = '1';
+        document.getElementById('gameName').style.top = '20px';
+        document.getElementById('gameName').style.opacity = '1';
         setTimeout(function () {
-            document.getElementById('title').style.opacity = '0';
+            document.getElementById('gameName').style.opacity = '0';
             setTimeout(function () {
-                document.getElementById('title').style.opacity = '1';
+                document.getElementById('gameName').style.opacity = '1';
                 document.getElementById('ruleButton').style.opacity = '1';
+                document.getElementById('rule').style.opacity = '1';
                 document.getElementById('startButton').style.opacity = '1';
             }, 1000);
         }, 1000);
     }, 1000);
+}
+
+//出現規則
+function showRule() {
+    document.getElementById("rule").style.display = "flex";
+}
+
+function closeRule() {
+    document.getElementById("rule").style.display = "none";
 }
 
 // 開始遊戲
@@ -51,6 +61,7 @@ function button_hide(num){
         n++;
     }
 }
+
 /*恢復按鈕*/
 function button_recover(){
     n = 0;
